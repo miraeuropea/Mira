@@ -1,0 +1,108 @@
+:root {
+    --social-background-color: #cccccc;
+    --social-separation-color: #ececec;
+    --social-icon-color: #646c79;
+    --social-text-color: black;
+    --item-hovered-color: white;
+    --color-nav: #d1d1d1;
+    --social-animation-speed: .2s;
+}
+body {
+
+    margin: 0px 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+.social {
+    width: 5rem;
+    position: fixed;
+    right: 0px;
+    background-color: var(--social-background-color);
+    box-shadow: rgba(12, 43, 30, 0.2) 0 4px 14px;
+    transition: width var(--social-animation-speed) ease;
+}
+.social-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.social-item {
+    width: 100%;
+    border-bottom: solid 1px var(--social-separation-color);
+}
+.social-item:last-child {
+    margin-top: auto;
+}
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 5rem;
+    width: 100%;
+    text-decoration: none;
+}
+.social-icon {
+    text-align: center;
+    font-size: 1.5rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+    color: var(--social-icon-color);
+}
+.social:not(:hover) .social-title {
+    display: none;
+}
+.social-title {
+    color: var(--social-text-color);
+    margin: 10px;
+}
+.social:hover {
+    width: 15rem;
+}
+.container {
+    margin: 20px;
+}
+
+.navigation {
+    color: var(--color-nav);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px;
+    background-color: #000000;
+}
+.navigation div {
+    display: flex;
+}
+.left {
+    margin-left: 20px;
+}
+.right {
+    margin-right: 30px;
+}
+#Name {
+    color: orange;
+    transition: all 100ms ease-in-out; 
+}
+#Name:hover {
+    transform: scale(1.1);
+}
+#Name:active {
+    transform: scale(1);
+}
+.onglets {
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 200ms ease-in-out; 
+}
+.onglets:hover {
+    color: #ffffff;
+}
+.onglets:active {
+    transform: scale(0.9);
+}
